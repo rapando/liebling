@@ -123,7 +123,8 @@ into the {body} of the default.hbs template --}}
                 </p>
               {{/has}}
               {{#if primary_author.bio}}
-                <p class="m-author__bio">{{primary_author.bio}}</p>
+                <p class="m-author__bio">{{primary_author.bio}}
+                <br />If you'd like to know about me and/or support me, head over to the <a style="text-decoration:underline;color:#0470ee;" href="/about">About Me</a> page.</p>
               {{/if}}
               <ul class="m-author-links">
                 {{#if primary_author.website}}
@@ -159,12 +160,14 @@ into the {body} of the default.hbs template --}}
           <section class="m-comments">
             <div class="m-load-comments__iframe l-wrapper in-comments js-comments-iframe">
               <section class="m-comments">
-                <script data-isso="//isso.rollinghills.fun/"
-                      src="//isso.rollinghills.fun/js/embed.min.js"></script>
-              <section id="isso-thread"></section> 
+
+                <style>
+                  .input-wrapper .
+                </style>
+                <script data-isso="//isso.rollinghills.fun/" src="//isso.rollinghills.fun/js/embed.min.js"></script>
+                    <section id="isso-thread"></section> 
                   <noscript>Please enable JavaScript to view comments.</noscript>
-                {{!-- <script defer src="https://commento.rollinghills.fun/js/commento.js"></script>
-                <div id="commento"></div> --}}
+                
               </section>
             </div>
           </section>
