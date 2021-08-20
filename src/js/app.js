@@ -49,6 +49,9 @@ $(() => {
   let submenuIsOpen = false
   let secondaryMenuTippy = null
 
+  // set light mode by default
+  localStorage.setItem('theme', 'light');
+
   const showSubmenu = () => {
     $header.addClass('submenu-is-active')
     $toggleSubmenu.addClass('active')
