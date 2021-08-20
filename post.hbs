@@ -159,8 +159,12 @@ into the {body} of the default.hbs template --}}
           <section class="m-comments">
             <div class="m-load-comments__iframe l-wrapper in-comments js-comments-iframe">
               <section class="m-comments">
-                <script defer src="https://commento.rollinghills.fun/js/commento.js"></script>
-                <div id="commento"></div>
+                <script data-isso="//isso.rollinghills.fun/"
+                      src="//isso.rollinghills.fun/js/embed.min.js"></script>
+              <section id="isso-thread"></section> 
+                  <noscript>Please enable JavaScript to view comments.</noscript>
+                {{!-- <script defer src="https://commento.rollinghills.fun/js/commento.js"></script>
+                <div id="commento"></div> --}}
               </section>
             </div>
           </section>
