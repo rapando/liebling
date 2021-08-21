@@ -162,11 +162,21 @@ into the {body} of the default.hbs template --}}
               <section class="m-comments">
 
                 <style>
-                  .input-wrapper .
+                  input[name="email"], input[name="website"], input[name="preview"] {
+                    display: none !important;
+                  }
                 </style>
+
+               <p>To add a comment, write your comment and name and press Submit.</p>
                 <script data-isso="//isso.rollinghills.fun/" src="//isso.rollinghills.fun/js/embed.min.js"></script>
                     <section id="isso-thread"></section> 
                   <noscript>Please enable JavaScript to view comments.</noscript>
+
+                  <script>
+                    setTimeout(function() {
+                      document.querySelector("[name='author']").placeholder = "Name (required)";
+                    } , 3000);
+                  </script>
                 
               </section>
             </div>
