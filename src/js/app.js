@@ -241,16 +241,17 @@ $(() => {
       $searchNoResults.hide()
     }
   })
+  localStorage.setItem('theme', 'light');
 
-  $toggleDarkMode.on('change', () => {
-    if ($toggleDarkMode.is(':checked')) {
-      $('html').attr('data-theme', 'dark')
-      localStorage.setItem('theme', 'dark')
-    } else {
-      $('html').attr('data-theme', 'light')
-      localStorage.setItem('theme', 'light')
-    }
-  })
+  // $toggleDarkMode.on('change', () => {
+  //   if ($toggleDarkMode.is(':checked')) {
+  //     $('html').attr('data-theme', 'dark')
+  //     localStorage.setItem('theme', 'dark')
+  //   } else {
+  //     $('html').attr('data-theme', 'light')
+  //     localStorage.setItem('theme', 'light')
+  //   }
+  // })
 
   $toggleDarkMode.on('mouseenter', () => {
     toggleDesktopTopbarOverflow(true)
