@@ -43,8 +43,7 @@ $(() => {
   const $mainNav = $('.js-main-nav')
   const $mainNavLeft = $('.js-main-nav-left')
   const $newsletterElements = $('.js-newsletter')
-  // const currentSavedTheme = localStorage.getItem('theme')
-  const currentSavedTheme = 'light';
+  const currentSavedTheme = localStorage.getItem('theme')
 
   let fuse = null
   let submenuIsOpen = false
